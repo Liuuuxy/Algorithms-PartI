@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c1e4f978-b3bd-4ae1-84e9-9e1170bce808" name="Default" comment="" />
+    <list default="true" id="c1e4f978-b3bd-4ae1-84e9-9e1170bce808" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Percolation.java" beforeDir="false" afterPath="$PROJECT_DIR$/Percolation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PercolationStats.java" beforeDir="false" afterPath="$PROJECT_DIR$/PercolationStats.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +35,18 @@
     <analyzeAfterCompile>true</analyzeAfterCompile>
     <toolWindowToFront>false</toolWindowToFront>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="D:\Liuuu\SecondYear\Algorithms-PartI\week1\percolation\.idea" />
+      </set>
+    </option>
+  </component>
   <component name="ProjectId" id="1QeSlPV97HYa8L6WqKvoZ4dFiYO" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="ToolWindowMessages.ShowToolbar" value="false" />
     <property name="ToolWindowRun.ShowToolbar" value="false" />
@@ -61,7 +76,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.PercolationStats">
     <configuration name="Percolation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Percolation" />
       <module name="Algorithms, Part I" />
@@ -69,6 +84,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PercolationStats" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="PercolationStats" />
+      <module name="Algorithms, Part I" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.PercolationStats" />
+      <item itemvalue="Application.Percolation" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Percolation" />
@@ -89,6 +115,8 @@
       <workItem from="1568279630403" duration="330000" />
       <workItem from="1568283556476" duration="1684000" />
       <workItem from="1568636035753" duration="7104000" />
+      <workItem from="1568720322495" duration="2883000" />
+      <workItem from="1568723959808" duration="3087000" />
     </task>
     <servers />
   </component>
@@ -103,5 +131,18 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

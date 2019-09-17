@@ -1,23 +1,24 @@
 
-import edu.princeton.cs.algs4.QuickFindUF;
-import edu.princeton.cs.algs4.StdOut;
+import edu.princeton.cs.algs4.WeightedQuickUnionUF;
 
 public class Percolation {
     private int size;
     private int width;
     private int top;
     private int bottom;
-    private QuickFindUF uf;
-    private int[] open;
+    private WeightedQuickUnionUF uf;
+    private boolean[] open;
+    private int openSiteNumber;
 
     // creates n-by-n grid, with all sites initially blocked
     public Percolation(int n) {
         size = n * n;
         width = n;
-        open = new int[size];
-        uf = new QuickFindUF(size + 2);
+        open = new boolean[size];
+        uf = new WeightedQuickUnionUF(size + 2);
         top = size;
         bottom = size + 1;
+        openSiteNumber = 0;
     }
 
     private void doUnioin(int i, int j) {
@@ -66,14 +67,15 @@ public class Percolation {
     public void open(int row, int col) {
         checkBounds(row, col);
         int num = ij(row, col);
-        open[num] = 1;
+        open[num] = true;
+        openSiteNumber++;
     }
 
     // is the site (row, col) open?
     public boolean isOpen(int row, int col) {
         checkBounds(row, col);
         int num = ij(row, col);
-        return (open[num] == 1);
+        return (open[num]);
     }
 
     // is the site (row, col) full?
@@ -84,7 +86,7 @@ public class Percolation {
 
     // returns the number of open sites
     public int numberOfOpenSites() {
-        return (uf.count());
+        return openSiteNumber;
     }
 
     // does the system percolate?
@@ -94,11 +96,11 @@ public class Percolation {
 
     // test client (optional)
     public static void main(String[] args) {
-        Percolation p = new Percolation(3);
+        /* Percolation p = new Percolation(3);
         p.open(1, 2);
         p.open(2, 3);
         p.open(3, 2);
         boolean b = p.isFull(1, 1);
-        StdOut.println(b);
+        StdOut.println(b); */
     }
 }
